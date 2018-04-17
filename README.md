@@ -2,4 +2,4 @@
 
 ## Why?
 
-This repo was created for the purpse of testing somethnig.
+This repo was created for the purpose of testing something.
