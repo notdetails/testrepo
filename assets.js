@@ -1,5 +1,3 @@
-/* @flow */
-
 import { ASSET_TYPES } from 'shared/constants'
 import { isPlainObject, validateComponentName } from '../util/index'
 
