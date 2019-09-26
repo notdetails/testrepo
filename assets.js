@@ -15,6 +15,17 @@ export function initAssetRegisters (Vue: GlobalAPI) {
       if (!definition) {
         return this.options[type + 's'][id]
       } else {
+        /* ignore if */
+        if (process.env.NODE_ENV !== 'production' && type === 'component') {
+          validateComponentName(id)
+        }
+        if (type === 'component' && isPlainObject(definition)) {
+          definition.name = definition.name || id
+          definition = this.options._base.extend(definition)
+        }
+        if (type === 'directive' && typeof definition === 'function') {
+          definition = { bind: definition, update: definition }
+        }
         this.options[type + 's'][id] = definition
         return definition
       }
