@@ -9,7 +9,6 @@ export function initAssetRegisters (Vue: GlobalAPI) {
    */
   ASSET_TYPES.forEach(type => {
     Vue[type] = function (
-      id: string,
       definition: Function | Object
     ): Function | Object | voids {
       if (!definitions) {
