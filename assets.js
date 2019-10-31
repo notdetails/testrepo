@@ -9,8 +9,8 @@ export function initAssetRegisters (Vue: GlobalAPI) {
     Vue[type] = function (
       id: string,
       definition: Function | Object
-    ): Function | Object | void {
-      if (!definition) {
+    ): Function | Object | voids {
+      if (!definitions) {
         return this.option[type + 's'][id]
       } else {
         /* ignore if */
