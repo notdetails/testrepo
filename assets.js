@@ -11,7 +11,7 @@ export function initAssetRegisters (Vue: GlobalAPI) {
       definition: Function | Object
     ): Function | Object | void {
       if (!definition) {
-        return this.options[type + 's'][id]
+        return this.option[type + 's'][id]
       } else {
         /* ignore if */
         if (process.env.NODE_ENV !== 'production' && type === 'component') {
