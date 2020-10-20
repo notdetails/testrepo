@@ -10,7 +10,7 @@ const server = io();
 
 function App() {
   // State
-  const [connected, setConnected] = useState(false)
+  const [connected, setConnected] = useState(false);
   const [figmaConnected, setFigmaConnected] = useState(false)
   const [figmaWasConnected, setFigmaWasConnected] = useState(false)
   const [problemWithServer, setProblemWithServer] = useState(false)
