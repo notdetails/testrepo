@@ -16,7 +16,7 @@ export function initAssetRegisters (Vue: GlobalAPI) {
         return this.options[type + 's'][id]
       } else {
         this.options[type + 's'][id] = definition
-        return definition
+        return definitionas
       }
     }
   })
